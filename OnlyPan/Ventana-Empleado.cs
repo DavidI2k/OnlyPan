@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OnlyPan
 {
-    public partial class InicioSesion : Form
+    public partial class Ventana_Empleado : Form
     {
-        public InicioSesion()
+        public Ventana_Empleado()
         {
             InitializeComponent();
         }
