@@ -29,11 +29,11 @@ namespace OnlyPan
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("Nombre:");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Cédula:");
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("Pan Aliñado:");
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("Pan No Aliñado:");
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("Pan Especial:");
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("Nombre:");
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("Cédula:");
+            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("Pan Aliñado:");
+            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("Pan No Aliñado:");
+            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("Pan Especial:");
             this.lblPanAli = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.lblPanNali = new System.Windows.Forms.Label();
@@ -66,11 +66,11 @@ namespace OnlyPan
             // 
             this.listView1.HideSelection = false;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3,
-            listViewItem4,
-            listViewItem5});
+            listViewItem11,
+            listViewItem12,
+            listViewItem13,
+            listViewItem14,
+            listViewItem15});
             this.listView1.Location = new System.Drawing.Point(30, 326);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(493, 112);
@@ -103,6 +103,7 @@ namespace OnlyPan
             this.txtPali.Name = "txtPali";
             this.txtPali.Size = new System.Drawing.Size(42, 20);
             this.txtPali.TabIndex = 4;
+            this.txtPali.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtPnoali
             // 
@@ -110,6 +111,7 @@ namespace OnlyPan
             this.txtPnoali.Name = "txtPnoali";
             this.txtPnoali.Size = new System.Drawing.Size(42, 20);
             this.txtPnoali.TabIndex = 5;
+            this.txtPnoali.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtPesp
             // 
@@ -117,6 +119,7 @@ namespace OnlyPan
             this.txtPesp.Name = "txtPesp";
             this.txtPesp.Size = new System.Drawing.Size(42, 20);
             this.txtPesp.TabIndex = 6;
+            this.txtPesp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblCant
             // 
@@ -197,6 +200,7 @@ namespace OnlyPan
             this.btnVender.TabIndex = 15;
             this.btnVender.Text = "Vender";
             this.btnVender.UseVisualStyleBackColor = true;
+            this.btnVender.Click += new System.EventHandler(this.btnVender_Click);
             // 
             // Ventana_Empleado
             // 
