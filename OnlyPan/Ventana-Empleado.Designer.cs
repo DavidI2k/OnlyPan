@@ -45,6 +45,7 @@ namespace OnlyPan
             this.lblFecha = new System.Windows.Forms.Label();
             this.dtpFechaComp = new System.Windows.Forms.DateTimePicker();
             this.btnVender = new System.Windows.Forms.Button();
+            this.btnGuard = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblPanAli
@@ -183,7 +184,7 @@ namespace OnlyPan
             // 
             // btnVender
             // 
-            this.btnVender.Location = new System.Drawing.Point(238, 261);
+            this.btnVender.Location = new System.Drawing.Point(199, 260);
             this.btnVender.Name = "btnVender";
             this.btnVender.Size = new System.Drawing.Size(75, 23);
             this.btnVender.TabIndex = 15;
@@ -191,11 +192,22 @@ namespace OnlyPan
             this.btnVender.UseVisualStyleBackColor = true;
             this.btnVender.Click += new System.EventHandler(this.btnVender_Click);
             // 
+            // btnGuard
+            // 
+            this.btnGuard.Location = new System.Drawing.Point(300, 260);
+            this.btnGuard.Name = "btnGuard";
+            this.btnGuard.Size = new System.Drawing.Size(95, 23);
+            this.btnGuard.TabIndex = 16;
+            this.btnGuard.Text = "Guardar Venta";
+            this.btnGuard.UseVisualStyleBackColor = true;
+            this.btnGuard.Click += new System.EventHandler(this.btnGuard_Click);
+            // 
             // Ventana_Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(535, 450);
+            this.Controls.Add(this.btnGuard);
             this.Controls.Add(this.btnVender);
             this.Controls.Add(this.dtpFechaComp);
             this.Controls.Add(this.lblFecha);
@@ -237,5 +249,6 @@ namespace OnlyPan
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.DateTimePicker dtpFechaComp;
         private System.Windows.Forms.Button btnVender;
+        private System.Windows.Forms.Button btnGuard;
     }
 }

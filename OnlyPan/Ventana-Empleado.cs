@@ -35,6 +35,13 @@ namespace OnlyPan
             lstGuardar.Items.Add("Panes Especiales: " + txtPesp.Text + "\r\n");
             lstGuardar.Items.Add(lblTot.Text + "\r\n");
 
+            
+
+        }
+
+        private void btnGuard_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

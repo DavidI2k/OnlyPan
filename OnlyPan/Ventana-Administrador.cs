@@ -15,6 +15,12 @@ namespace OnlyPan
         public Ventana_Administrador()
         {
             InitializeComponent();
+            
+             
+        }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
         }
     }
 }
