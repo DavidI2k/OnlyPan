@@ -29,13 +29,8 @@ namespace OnlyPan
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("Nombre:");
-            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("Cédula:");
-            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("Pan Aliñado:");
-            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("Pan No Aliñado:");
-            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("Pan Especial:");
             this.lblPanAli = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lstGuardar = new System.Windows.Forms.ListView();
             this.lblPanNali = new System.Windows.Forms.Label();
             this.lblPanEsp = new System.Windows.Forms.Label();
             this.txtPali = new System.Windows.Forms.TextBox();
@@ -62,20 +57,14 @@ namespace OnlyPan
             this.lblPanAli.TabIndex = 0;
             this.lblPanAli.Text = "Pan Aliñado: 1000$";
             // 
-            // listView1
+            // lstGuardar
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem11,
-            listViewItem12,
-            listViewItem13,
-            listViewItem14,
-            listViewItem15});
-            this.listView1.Location = new System.Drawing.Point(30, 326);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(493, 112);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.lstGuardar.HideSelection = false;
+            this.lstGuardar.Location = new System.Drawing.Point(30, 326);
+            this.lstGuardar.Name = "lstGuardar";
+            this.lstGuardar.Size = new System.Drawing.Size(493, 112);
+            this.lstGuardar.TabIndex = 1;
+            this.lstGuardar.UseCompatibleStateImageBehavior = false;
             // 
             // lblPanNali
             // 
@@ -221,7 +210,7 @@ namespace OnlyPan
             this.Controls.Add(this.txtPali);
             this.Controls.Add(this.lblPanEsp);
             this.Controls.Add(this.lblPanNali);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.lstGuardar);
             this.Controls.Add(this.lblPanAli);
             this.Name = "Ventana_Empleado";
             this.Text = "Ventana_Empleado";
@@ -233,7 +222,7 @@ namespace OnlyPan
         #endregion
 
         private System.Windows.Forms.Label lblPanAli;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lstGuardar;
         private System.Windows.Forms.Label lblPanNali;
         private System.Windows.Forms.Label lblPanEsp;
         private System.Windows.Forms.TextBox txtPali;

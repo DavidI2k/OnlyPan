@@ -27,6 +27,14 @@ namespace OnlyPan
 
             lblTot.Text = "Total: " + tot.ToString();
 
+            lstGuardar.Items.Add("Nombre: " + txtNcliente.Text);
+            lstGuardar.Items.Add("Cédula: " + textCecliente.Text);
+            lstGuardar.Items.Add("Fecha: " + dtpFechaComp.Text);
+            lstGuardar.Items.Add("Panes Aliñados: " + txtPali.Text);
+            lstGuardar.Items.Add("Panes No Aliñados: " + txtPnoali.Text);
+            lstGuardar.Items.Add("Panes Especiales: " + txtPesp.Text + "\r\n");
+            lstGuardar.Items.Add(lblTot.Text + "\r\n");
+
         }
     }
 }
