@@ -49,6 +49,8 @@ namespace OnlyPan
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.txtHora = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -69,9 +71,9 @@ namespace OnlyPan
             this.lstGuardar.BackColor = System.Drawing.Color.Wheat;
             this.lstGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstGuardar.HideSelection = false;
-            this.lstGuardar.Location = new System.Drawing.Point(30, 326);
+            this.lstGuardar.Location = new System.Drawing.Point(5, 326);
             this.lstGuardar.Name = "lstGuardar";
-            this.lstGuardar.Size = new System.Drawing.Size(493, 112);
+            this.lstGuardar.Size = new System.Drawing.Size(518, 112);
             this.lstGuardar.TabIndex = 1;
             this.lstGuardar.UseCompatibleStateImageBehavior = false;
             // 
@@ -236,12 +238,32 @@ namespace OnlyPan
             this.pictureBox3.TabIndex = 18;
             this.pictureBox3.TabStop = false;
             // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.Location = new System.Drawing.Point(340, 221);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(46, 16);
+            this.lblHora.TabIndex = 19;
+            this.lblHora.Text = "Hora:";
+            // 
+            // txtHora
+            // 
+            this.txtHora.BackColor = System.Drawing.Color.BurlyWood;
+            this.txtHora.Location = new System.Drawing.Point(343, 249);
+            this.txtHora.Name = "txtHora";
+            this.txtHora.Size = new System.Drawing.Size(123, 20);
+            this.txtHora.TabIndex = 20;
+            // 
             // Ventana_Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
             this.ClientSize = new System.Drawing.Size(535, 450);
+            this.Controls.Add(this.txtHora);
+            this.Controls.Add(this.lblHora);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -292,5 +314,7 @@ namespace OnlyPan
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label lblHora;
+        private System.Windows.Forms.TextBox txtHora;
     }
 }
