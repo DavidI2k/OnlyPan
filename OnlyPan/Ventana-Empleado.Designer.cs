@@ -29,21 +29,34 @@ namespace OnlyPan
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("Nombre:");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Cédula:");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("Pan Aliñado:");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("Pan No Aliñado:");
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("Pan Especial:");
             this.lblPanAli = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.lblPanNali = new System.Windows.Forms.Label();
             this.lblPanEsp = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPali = new System.Windows.Forms.TextBox();
+            this.txtPnoali = new System.Windows.Forms.TextBox();
+            this.txtPesp = new System.Windows.Forms.TextBox();
             this.lblCant = new System.Windows.Forms.Label();
+            this.lblTot = new System.Windows.Forms.Label();
+            this.lblNombreC = new System.Windows.Forms.Label();
+            this.txtNcliente = new System.Windows.Forms.TextBox();
+            this.lblCedulaC = new System.Windows.Forms.Label();
+            this.textCecliente = new System.Windows.Forms.TextBox();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.dtpFechaComp = new System.Windows.Forms.DateTimePicker();
+            this.btnVender = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblPanAli
             // 
             this.lblPanAli.AutoSize = true;
             this.lblPanAli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPanAli.Location = new System.Drawing.Point(160, 45);
+            this.lblPanAli.Location = new System.Drawing.Point(93, 48);
             this.lblPanAli.Name = "lblPanAli";
             this.lblPanAli.Size = new System.Drawing.Size(140, 16);
             this.lblPanAli.TabIndex = 0;
@@ -52,9 +65,15 @@ namespace OnlyPan
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(667, 319);
+            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4,
+            listViewItem5});
+            this.listView1.Location = new System.Drawing.Point(30, 326);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(121, 97);
+            this.listView1.Size = new System.Drawing.Size(493, 112);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -62,7 +81,7 @@ namespace OnlyPan
             // 
             this.lblPanNali.AutoSize = true;
             this.lblPanNali.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPanNali.Location = new System.Drawing.Point(160, 88);
+            this.lblPanNali.Location = new System.Drawing.Point(93, 91);
             this.lblPanNali.Name = "lblPanNali";
             this.lblPanNali.Size = new System.Drawing.Size(156, 16);
             this.lblPanNali.TabIndex = 2;
@@ -72,32 +91,32 @@ namespace OnlyPan
             // 
             this.lblPanEsp.AutoSize = true;
             this.lblPanEsp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPanEsp.Location = new System.Drawing.Point(160, 132);
+            this.lblPanEsp.Location = new System.Drawing.Point(93, 135);
             this.lblPanEsp.Name = "lblPanEsp";
             this.lblPanEsp.Size = new System.Drawing.Size(148, 16);
             this.lblPanEsp.TabIndex = 3;
             this.lblPanEsp.Text = "Pan Especial: 2000$";
             // 
-            // textBox1
+            // txtPali
             // 
-            this.textBox1.Location = new System.Drawing.Point(39, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtPali.Location = new System.Drawing.Point(30, 44);
+            this.txtPali.Name = "txtPali";
+            this.txtPali.Size = new System.Drawing.Size(42, 20);
+            this.txtPali.TabIndex = 4;
             // 
-            // textBox2
+            // txtPnoali
             // 
-            this.textBox2.Location = new System.Drawing.Point(39, 84);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtPnoali.Location = new System.Drawing.Point(30, 87);
+            this.txtPnoali.Name = "txtPnoali";
+            this.txtPnoali.Size = new System.Drawing.Size(42, 20);
+            this.txtPnoali.TabIndex = 5;
             // 
-            // textBox3
+            // txtPesp
             // 
-            this.textBox3.Location = new System.Drawing.Point(39, 128);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtPesp.Location = new System.Drawing.Point(30, 131);
+            this.txtPesp.Name = "txtPesp";
+            this.txtPesp.Size = new System.Drawing.Size(42, 20);
+            this.txtPesp.TabIndex = 6;
             // 
             // lblCant
             // 
@@ -108,15 +127,94 @@ namespace OnlyPan
             this.lblCant.TabIndex = 7;
             this.lblCant.Text = "Ingrese cantidad a llevar:";
             // 
+            // lblTot
+            // 
+            this.lblTot.AutoSize = true;
+            this.lblTot.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTot.ForeColor = System.Drawing.Color.Red;
+            this.lblTot.Location = new System.Drawing.Point(27, 194);
+            this.lblTot.Name = "lblTot";
+            this.lblTot.Size = new System.Drawing.Size(37, 15);
+            this.lblTot.TabIndex = 8;
+            this.lblTot.Text = "Total:";
+            // 
+            // lblNombreC
+            // 
+            this.lblNombreC.AutoSize = true;
+            this.lblNombreC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreC.Location = new System.Drawing.Point(340, 9);
+            this.lblNombreC.Name = "lblNombreC";
+            this.lblNombreC.Size = new System.Drawing.Size(145, 16);
+            this.lblNombreC.TabIndex = 9;
+            this.lblNombreC.Text = "Nombre del Cliente:";
+            // 
+            // txtNcliente
+            // 
+            this.txtNcliente.Location = new System.Drawing.Point(343, 44);
+            this.txtNcliente.Name = "txtNcliente";
+            this.txtNcliente.Size = new System.Drawing.Size(142, 20);
+            this.txtNcliente.TabIndex = 10;
+            // 
+            // lblCedulaC
+            // 
+            this.lblCedulaC.AutoSize = true;
+            this.lblCedulaC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCedulaC.Location = new System.Drawing.Point(340, 87);
+            this.lblCedulaC.Name = "lblCedulaC";
+            this.lblCedulaC.Size = new System.Drawing.Size(139, 16);
+            this.lblCedulaC.TabIndex = 11;
+            this.lblCedulaC.Text = "Cédula del Cliente:";
+            // 
+            // textCecliente
+            // 
+            this.textCecliente.Location = new System.Drawing.Point(343, 117);
+            this.textCecliente.Name = "textCecliente";
+            this.textCecliente.Size = new System.Drawing.Size(142, 20);
+            this.textCecliente.TabIndex = 12;
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.Location = new System.Drawing.Point(340, 160);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(55, 16);
+            this.lblFecha.TabIndex = 13;
+            this.lblFecha.Text = "Fecha:";
+            // 
+            // dtpFechaComp
+            // 
+            this.dtpFechaComp.Location = new System.Drawing.Point(323, 189);
+            this.dtpFechaComp.Name = "dtpFechaComp";
+            this.dtpFechaComp.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaComp.TabIndex = 14;
+            // 
+            // btnVender
+            // 
+            this.btnVender.Location = new System.Drawing.Point(238, 261);
+            this.btnVender.Name = "btnVender";
+            this.btnVender.Size = new System.Drawing.Size(75, 23);
+            this.btnVender.TabIndex = 15;
+            this.btnVender.Text = "Vender";
+            this.btnVender.UseVisualStyleBackColor = true;
+            // 
             // Ventana_Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(535, 450);
+            this.Controls.Add(this.btnVender);
+            this.Controls.Add(this.dtpFechaComp);
+            this.Controls.Add(this.lblFecha);
+            this.Controls.Add(this.textCecliente);
+            this.Controls.Add(this.lblCedulaC);
+            this.Controls.Add(this.txtNcliente);
+            this.Controls.Add(this.lblNombreC);
+            this.Controls.Add(this.lblTot);
             this.Controls.Add(this.lblCant);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPesp);
+            this.Controls.Add(this.txtPnoali);
+            this.Controls.Add(this.txtPali);
             this.Controls.Add(this.lblPanEsp);
             this.Controls.Add(this.lblPanNali);
             this.Controls.Add(this.listView1);
@@ -134,9 +232,17 @@ namespace OnlyPan
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Label lblPanNali;
         private System.Windows.Forms.Label lblPanEsp;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPali;
+        private System.Windows.Forms.TextBox txtPnoali;
+        private System.Windows.Forms.TextBox txtPesp;
         private System.Windows.Forms.Label lblCant;
+        private System.Windows.Forms.Label lblTot;
+        private System.Windows.Forms.Label lblNombreC;
+        private System.Windows.Forms.TextBox txtNcliente;
+        private System.Windows.Forms.Label lblCedulaC;
+        private System.Windows.Forms.TextBox textCecliente;
+        private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.DateTimePicker dtpFechaComp;
+        private System.Windows.Forms.Button btnVender;
     }
 }
