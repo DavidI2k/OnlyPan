@@ -23,7 +23,7 @@ namespace OnlyPan
             double pnali = Convert.ToDouble(txtPnoali.Text);
             double pesp = Convert.ToDouble(txtPesp.Text);
 
-            double tot = (pali*100) + (pnali*500) + (pesp*2000);
+            double tot = (pali*1000) + (pnali*500) + (pesp*2000);
 
             lblTot.Text = "Total: " + tot.ToString();
 

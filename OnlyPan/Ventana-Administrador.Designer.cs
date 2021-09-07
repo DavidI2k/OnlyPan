@@ -32,7 +32,7 @@ namespace OnlyPan
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblTit2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtbEmpleados = new System.Windows.Forms.RichTextBox();
             this.lblTotal = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -40,8 +40,8 @@ namespace OnlyPan
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblTitulo.Location = new System.Drawing.Point(270, 22);
+            this.lblTitulo.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lblTitulo.Location = new System.Drawing.Point(107, 9);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(250, 24);
             this.lblTitulo.TabIndex = 0;
@@ -59,20 +59,22 @@ namespace OnlyPan
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(685, 265);
+            this.button1.Location = new System.Drawing.Point(340, 229);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 39);
+            this.button1.Size = new System.Drawing.Size(100, 39);
             this.button1.TabIndex = 4;
             this.button1.Text = "Lista de Empleados";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // richTextBox1
+            // rtbEmpleados
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(685, 120);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(100, 139);
-            this.richTextBox1.TabIndex = 5;
-            this.richTextBox1.Text = "";
+            this.rtbEmpleados.BackColor = System.Drawing.Color.Wheat;
+            this.rtbEmpleados.Location = new System.Drawing.Point(340, 72);
+            this.rtbEmpleados.Name = "rtbEmpleados";
+            this.rtbEmpleados.Size = new System.Drawing.Size(100, 139);
+            this.rtbEmpleados.TabIndex = 5;
+            this.rtbEmpleados.Text = "";
             // 
             // lblTotal
             // 
@@ -87,9 +89,10 @@ namespace OnlyPan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.ClientSize = new System.Drawing.Size(461, 438);
             this.Controls.Add(this.lblTotal);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rtbEmpleados);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblTit2);
             this.Controls.Add(this.lblTitulo);
@@ -105,7 +108,7 @@ namespace OnlyPan
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblTit2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtbEmpleados;
         private System.Windows.Forms.Label lblTotal;
     }
 }

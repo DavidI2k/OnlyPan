@@ -22,5 +22,11 @@ namespace OnlyPan
         private void btnVentas_Click(object sender, EventArgs e)
         {
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            rtbEmpleados.AppendText("David" + "\r\n");
+            rtbEmpleados.AppendText("Administrador: Emilia" + "\r\n");
+        }
     }
 }

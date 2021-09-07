@@ -29,6 +29,7 @@ namespace OnlyPan
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ventana_Empleado));
             this.lblPanAli = new System.Windows.Forms.Label();
             this.lstGuardar = new System.Windows.Forms.ListView();
             this.lblPanNali = new System.Windows.Forms.Label();
@@ -45,7 +46,12 @@ namespace OnlyPan
             this.lblFecha = new System.Windows.Forms.Label();
             this.dtpFechaComp = new System.Windows.Forms.DateTimePicker();
             this.btnVender = new System.Windows.Forms.Button();
-            this.btnGuard = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPanAli
@@ -60,6 +66,8 @@ namespace OnlyPan
             // 
             // lstGuardar
             // 
+            this.lstGuardar.BackColor = System.Drawing.Color.Wheat;
+            this.lstGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstGuardar.HideSelection = false;
             this.lstGuardar.Location = new System.Drawing.Point(30, 326);
             this.lstGuardar.Name = "lstGuardar";
@@ -89,6 +97,7 @@ namespace OnlyPan
             // 
             // txtPali
             // 
+            this.txtPali.BackColor = System.Drawing.Color.BurlyWood;
             this.txtPali.Location = new System.Drawing.Point(30, 44);
             this.txtPali.Name = "txtPali";
             this.txtPali.Size = new System.Drawing.Size(42, 20);
@@ -97,6 +106,7 @@ namespace OnlyPan
             // 
             // txtPnoali
             // 
+            this.txtPnoali.BackColor = System.Drawing.Color.BurlyWood;
             this.txtPnoali.Location = new System.Drawing.Point(30, 87);
             this.txtPnoali.Name = "txtPnoali";
             this.txtPnoali.Size = new System.Drawing.Size(42, 20);
@@ -105,6 +115,7 @@ namespace OnlyPan
             // 
             // txtPesp
             // 
+            this.txtPesp.BackColor = System.Drawing.Color.BurlyWood;
             this.txtPesp.Location = new System.Drawing.Point(30, 131);
             this.txtPesp.Name = "txtPesp";
             this.txtPesp.Size = new System.Drawing.Size(42, 20);
@@ -123,11 +134,11 @@ namespace OnlyPan
             // lblTot
             // 
             this.lblTot.AutoSize = true;
-            this.lblTot.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTot.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTot.ForeColor = System.Drawing.Color.Red;
             this.lblTot.Location = new System.Drawing.Point(27, 194);
             this.lblTot.Name = "lblTot";
-            this.lblTot.Size = new System.Drawing.Size(37, 15);
+            this.lblTot.Size = new System.Drawing.Size(48, 16);
             this.lblTot.TabIndex = 8;
             this.lblTot.Text = "Total:";
             // 
@@ -143,6 +154,7 @@ namespace OnlyPan
             // 
             // txtNcliente
             // 
+            this.txtNcliente.BackColor = System.Drawing.Color.BurlyWood;
             this.txtNcliente.Location = new System.Drawing.Point(343, 44);
             this.txtNcliente.Name = "txtNcliente";
             this.txtNcliente.Size = new System.Drawing.Size(142, 20);
@@ -160,6 +172,7 @@ namespace OnlyPan
             // 
             // textCecliente
             // 
+            this.textCecliente.BackColor = System.Drawing.Color.BurlyWood;
             this.textCecliente.Location = new System.Drawing.Point(343, 117);
             this.textCecliente.Name = "textCecliente";
             this.textCecliente.Size = new System.Drawing.Size(142, 20);
@@ -184,7 +197,8 @@ namespace OnlyPan
             // 
             // btnVender
             // 
-            this.btnVender.Location = new System.Drawing.Point(199, 260);
+            this.btnVender.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVender.Location = new System.Drawing.Point(249, 287);
             this.btnVender.Name = "btnVender";
             this.btnVender.Size = new System.Drawing.Size(75, 23);
             this.btnVender.TabIndex = 15;
@@ -192,22 +206,45 @@ namespace OnlyPan
             this.btnVender.UseVisualStyleBackColor = true;
             this.btnVender.Click += new System.EventHandler(this.btnVender_Click);
             // 
-            // btnGuard
+            // pictureBox1
             // 
-            this.btnGuard.Location = new System.Drawing.Point(300, 260);
-            this.btnGuard.Name = "btnGuard";
-            this.btnGuard.Size = new System.Drawing.Size(95, 23);
-            this.btnGuard.TabIndex = 16;
-            this.btnGuard.Text = "Guardar Venta";
-            this.btnGuard.UseVisualStyleBackColor = true;
-            this.btnGuard.Click += new System.EventHandler(this.btnGuard_Click);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(239, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(34, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(255, 87);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 29);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 17;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(247, 135);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(40, 31);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 18;
+            this.pictureBox3.TabStop = false;
             // 
             // Ventana_Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkSalmon;
             this.ClientSize = new System.Drawing.Size(535, 450);
-            this.Controls.Add(this.btnGuard);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnVender);
             this.Controls.Add(this.dtpFechaComp);
             this.Controls.Add(this.lblFecha);
@@ -226,6 +263,9 @@ namespace OnlyPan
             this.Controls.Add(this.lblPanAli);
             this.Name = "Ventana_Empleado";
             this.Text = "Ventana_Empleado";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,6 +289,8 @@ namespace OnlyPan
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.DateTimePicker dtpFechaComp;
         private System.Windows.Forms.Button btnVender;
-        private System.Windows.Forms.Button btnGuard;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
