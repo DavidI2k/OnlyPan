@@ -30,10 +30,8 @@ namespace OnlyPan
         private void InitializeComponent()
         {
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.lblTit2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.rtbEmpleados = new System.Windows.Forms.RichTextBox();
-            this.lblTotal = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -47,19 +45,9 @@ namespace OnlyPan
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Bienvenido Administrador";
             // 
-            // lblTit2
-            // 
-            this.lblTit2.AutoSize = true;
-            this.lblTit2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTit2.Location = new System.Drawing.Point(13, 72);
-            this.lblTit2.Name = "lblTit2";
-            this.lblTit2.Size = new System.Drawing.Size(131, 15);
-            this.lblTit2.TabIndex = 2;
-            this.lblTit2.Text = "Ver total de sus ventas:";
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(340, 229);
+            this.button1.Location = new System.Drawing.Point(12, 230);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 39);
             this.button1.TabIndex = 4;
@@ -70,31 +58,20 @@ namespace OnlyPan
             // rtbEmpleados
             // 
             this.rtbEmpleados.BackColor = System.Drawing.Color.Wheat;
-            this.rtbEmpleados.Location = new System.Drawing.Point(340, 72);
+            this.rtbEmpleados.Location = new System.Drawing.Point(12, 72);
             this.rtbEmpleados.Name = "rtbEmpleados";
-            this.rtbEmpleados.Size = new System.Drawing.Size(100, 139);
+            this.rtbEmpleados.Size = new System.Drawing.Size(118, 139);
             this.rtbEmpleados.TabIndex = 5;
             this.rtbEmpleados.Text = "";
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(13, 120);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(35, 13);
-            this.lblTotal.TabIndex = 6;
-            this.lblTotal.Text = "label1";
             // 
             // Ventana_Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(461, 438);
-            this.Controls.Add(this.lblTotal);
+            this.ClientSize = new System.Drawing.Size(461, 275);
             this.Controls.Add(this.rtbEmpleados);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.lblTit2);
             this.Controls.Add(this.lblTitulo);
             this.Name = "Ventana_Administrador";
             this.Text = "Ventana_Administrador";
@@ -106,9 +83,7 @@ namespace OnlyPan
         #endregion
 
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Label lblTit2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox rtbEmpleados;
-        private System.Windows.Forms.Label lblTotal;
     }
 }
