@@ -58,6 +58,7 @@ namespace OnlyPan
             this.txtContra.Location = new System.Drawing.Point(214, 338);
             this.txtContra.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txtContra.Name = "txtContra";
+            this.txtContra.PasswordChar = '*';
             this.txtContra.Size = new System.Drawing.Size(180, 32);
             this.txtContra.TabIndex = 1;
             // 
